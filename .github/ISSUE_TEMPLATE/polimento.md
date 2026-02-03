@@ -1,87 +1,46 @@
 ---
-name: Polimento de IA / UI
-about: Reportar alucinações, textos robóticos, elementos desnecessários ou erros visuais gerados pela IA
+name: Polimento de UI
+about: Textos estranhos, elementos quebrados, alucinações de IA, coisas para limpar
 title: '[POLIMENTO] '
-labels: polimento, ui-ux
+labels: polimento
 assignees: ''
 ---
 
-## 🧹 Descrição da Inconsistência
+## 🔍 Texto Exato (CTRL+F)
 
-Descreva visualmente o erro como se estivesse narrando a tela (estilo acessibilidade).
-**Seja específico:** Diga exatamente o que está estranho no texto, layout ou elemento.
-
-**Exemplos de problemas comuns:**
-- Texto técnico demais para o usuário final
-- Placeholder não substituído (Lorem ipsum, texto em inglês)
-- Elemento visual quebrado ou desalinhado
-- Botão/link que não faz nada (fake)
-- Texto redundante ou duplicado
-- Ícone sem sentido no contexto
-
-## 📍 Onde Ocorre
-
-- **Página/Rota:** [ex: /dashboard/minhas-cotacoes]
-- **Elemento Específico:** [ex: Tooltip do ícone de ajuda, Card "Resumo", Modal de confirmação]
-- **Referência Visual:** [ex: "Ao lado do botão azul", "Abaixo do título principal", "Terceira coluna da tabela"]
-
-## 📋 Passos para Encontrar
-
-1. Acesse a tela '...'
-2. Realize a ação '...' (ex: passar o mouse, clicar, rolar a página)
-3. Localize o elemento visual '...'
-4. Veja a inconsistência
-
-## ✅ Comportamento/Texto Esperado
-
-Descreva como o elemento deveria ser ou o texto correto a ser usado.
-
-**Exemplos:**
-- "O botão deve exibir apenas 'Salvar' e não 'Salvar Dados no Sistema'"
-- "O tooltip deve estar em português"
-- "O card deve estar alinhado com os demais"
-
-## ❌ Comportamento Atual (Erro)
-
-Descreva tecnicamente o erro visual ou de texto.
-
-**Exemplos:**
-- "A IA gerou um texto placeholder em inglês"
-- "O botão está invadindo a margem direita"
-- "O texto está técnico demais: 'Execute a query de inserção'"
-- "Aparece 'undefined' no lugar do nome"
-
-## 📸 Screenshots (OBRIGATÓRIO)
-
-Adicione capturas de tela e **marque em vermelho** o local exato do ajuste.
-**Issues de polimento sem screenshot e marcação serão devolvidas.**
-
-## 🔧 Tipo de Correção Necessária
-
-Marque o que precisa ser feito:
-
-- [ ] **Remover Elemento:** O item é inútil/alucinação/não deveria existir
-- [ ] **Alterar Texto:** O texto existe mas está ruim/técnico/errado
-- [ ] **Ajustar CSS/Layout:** O elemento está quebrado/desalinhado/com tamanho errado
-- [ ] **Corrigir Lógica:** O botão/link não faz nada ou faz a coisa errada
-- [ ] **Traduzir:** Texto em inglês que deveria estar em português
-- [ ] **Simplificar:** Texto muito longo/complexo que precisa ser resumido
-
-## 🔍 Texto para Busca (CTRL+F)
-
-**Obrigatório:** Copie e cole aqui o texto **exato** que aparece errado na tela.
-Isso facilita encontrar no código onde está o problema.
+Cole aqui o texto **exato** que aparece na tela para facilitar a busca no código:
 
 ```text
-(Cole o texto exato aqui)
+
 ```
 
-## 📊 Prioridade
+## 📍 Localização
 
-- [ ] Alta - Visível para usuários / causa confusão
-- [ ] Média - Percebido mas não impede uso
-- [ ] Baixa - Cosmético / detalhe fino
+- **Página:** [ex: /dashboard/minhas-cotacoes]
+- **Elemento:** [ex: Botão no canto superior direito, Tooltip do ícone "?", Coluna "Ações" da tabela]
 
-## ℹ️ Contexto Adicional
+## 📸 Screenshot (OBRIGATÓRIO)
 
-Informações extras que ajudem a entender o problema (opcional).
+Adicione a captura de tela e **circule em vermelho** o problema.
+> ⚠️ Issues sem screenshot serão devolvidas.
+
+## ❌ O que está errado
+
+[Descreva o problema em uma frase]
+
+## ✅ Como deveria ser
+
+[Descreva ou escreva o texto correto]
+
+## 🔧 Ação Necessária
+
+- [ ] 🗑️ **Remover** - Elemento não deveria existir
+- [ ] ✏️ **Trocar texto** - Texto errado/técnico/em inglês
+- [ ] 📐 **Ajustar visual** - Desalinhado/quebrado/tamanho errado
+- [ ] 🔗 **Corrigir link/ação** - Não funciona ou vai pro lugar errado
+
+## 🚦 Impacto
+
+- [ ] 🔴 Alto - Usuário vê e fica confuso
+- [ ] 🟡 Médio - Percebe mas não atrapalha
+- [ ] 🟢 Baixo - Detalhe fino
